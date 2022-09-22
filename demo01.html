@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dd's web</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        .main{
+            width: 1250px;
+            margin: auto;
+        }
+        .header,.nav,.container,.footer{
+            /* 这四个盒子都要左浮动 */
+            float: left;
+            /* 让它们铺满浏览器 */
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+        .header{
+            background: darkseagreen;
+            padding: 20px;
+            text-align: center;
+        }
+        .nav{
+            background: cornflowerblue;
+        }
+        .nav a{
+            color: aliceblue;
+            padding: 10px 20px;
+            display: inline-block;/* 让链接以块的形式显示 */
+        }
+        .nav a:hover{
+            background: azure;
+            color: black;
+        }
+        .lside{
+            width: 200px;
+            float: left;
+        }
+        .rside{
+            width: 550px;
+            float: right;
+        }
+        .content{
+            width: 500px;
+            float: left;
+        }
+        .lside,.rside,.content{
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .footer{
+            padding: 10px;
+            background: aliceblue;
+        }
+        /* 当浏览宽度小于700时，三个栏进行竖排 */
+        @media screen and (max-width: 700px){
+            .lside,.rside,.content{
+                width: 100%;
+                margin: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>《三块广告牌》</h1>
+            <p>Three Billboards Outside Ebbing, Missouri (2017)</p>
+        </div>
+        <div class="nav">
+            <a href="#">剧情简介</a>
+            <a href="#">演职表</a>
+            <a href="#">剧照</a>
+            <a href="#">相关电影</a>
+        </div>
+        <div class="container">
+            <div class="lside">
+                <h2>剧情简介</h2>
+                <p>
+                    米尔德雷德（弗兰西斯·麦克多蒙德 Frances McDormand 饰）的女儿在外出时惨遭奸杀，米尔德雷德和丈夫查理（约翰·哈克斯 John Hawkes 饰）之间的婚姻因此走到了尽头，如今，她同儿子罗比（卢卡斯·赫奇斯 Lucas Hedges饰）过着相依为命的生活。一晃眼几个月过去了，案件仍然没有告破预兆，而警方似乎早已经将注意力从案子上转移了开来。
+                    被绝望和痛苦缠绕的米尔德雷德租下了高速公路边上的三块巨型广告牌，在上面控诉警方办案无能，并将矛头直接对准了警察局局长威洛比（伍迪·哈里森 Woody Harrelson 饰）。实际上，威洛比一直隐瞒着自己身患绝症命不久矣的事实。因为这三块广告牌，米尔德雷德和威洛比的生活发生了翻天覆地的变化。
+                </p>
+            </div>
+
+            <div class="content">
+                <h2>剧照</h2>
+                <p>
+                    <img src="剧照1.webp" width="500" height="300">
+                    <img src="剧照3.webp" width="500" height="300">
+
+                </p>
+            </div>
+            <div class="rside">
+                <h2>演职表</h2>
+                <p>
+                    <img src="演职表1.jpg" width="550" height="300">
+                    <img src="演职表2.jpg" width="550" height="300">
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>相关电影：《猫鼠游戏》《调音师》《看不见的客人》...</p>
+        </div>
+    </div>
+
+</body>
+</html>
